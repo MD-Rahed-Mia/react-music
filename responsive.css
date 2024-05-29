@@ -1,0 +1,144 @@
+/* for large device */
+@media screen and (max-width: 1440px) {
+  nav {
+    width: 25%;
+  }
+
+  main {
+    width: 100%;
+  }
+
+  aside {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .box {
+    width: 90%;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .box {
+    width: 90%;
+  }
+
+  nav {
+    display: none;
+  }
+
+  nav.active {
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 60%;
+  }
+
+  .main-topbar ul {
+    gap: 10px;
+    flex-wrap: wrap;
+  }
+
+  /* trendy song */
+  .trendy-song-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 20px;
+  }
+  .trendy-song-card-title {
+    font-size: 14px;
+  }
+  .trendy-song-card-playlist a {
+    font-size: 10px;
+  }
+
+  /* recently played */
+  .recently-played-title img {
+    height: 120px;
+    width: 120px;
+  }
+  .recently-played-card-desc {
+    font-size: 10px;
+  }
+
+  .recently-played-card {
+    height: 40px;
+  }
+
+  .recently-played-card img {
+    height: 40px;
+    width: 40px;
+    margin-right: 5px;
+  }
+
+  .menu-btn {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .box {
+    overflow-y: scroll;
+  }
+
+  .box::-webkit-scrollbar {
+    width: 1px;
+  }
+  nav {
+    width: 60%;
+  }
+
+  .main-topbar-search {
+    max-width: 70%;
+  }
+
+  .trendy-song-cards {
+    gap: 0;
+    flex-wrap: wrap;
+  }
+  .trendy-song-card {
+    width: 45%;
+  }
+  .trendy-song-card-title {
+    font-size: 14px;
+  }
+  .trendy-song-card img {
+    height: 100px;
+    width: 100px;
+  }
+
+  /* recently played */
+  .recently-played-row {
+    flex-direction: column;
+  }
+
+  .recently-played-title img {
+    width: 80px;
+    height: 80px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .box {
+    height: 98vh;
+  }
+
+  nav {
+    width: 70%;
+  }
+
+  .recently-played-row {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .recently-played-title img {
+    width: 100%;
+    height: 100px;
+  }
+}
+
+/* for mobile devices */

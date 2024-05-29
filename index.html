@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>React music clone figma</title>
+
+
+    <!-- style -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- responsive css -->
+    <link rel="stylesheet" href="responsive.css" />
+
+    <!-- poppins font -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+    </style>
+    <!-- poppins font end here -->
+    <!-- font awesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- font awesome cdn ends hre -->
+  </head>
+
+  <body>
+    <!-- container -->
+    <section class="box">
+
+
+      <!-- nav starts here -->
+      <nav>
+        <div class="nav-menu">
+          <!-- top three dots -->
+
+          <div class="top-three-dots">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
+          <!-- end top three dots -->
+
+          <ul>
+            <li class="active">
+              <span><i class="fa-solid fa-house"></i></span>
+              <h2>Home</h2>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-hotel"></i></span>
+              <h2>Activity</h2>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-globe"></i></span>
+              <h2>Discover</h2>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-heart"></i></span>
+              <h2>Likes songs</h2>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-music"></i></span>
+              <h2>Playlists</h2>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-user-group"></i></span>
+              <h2>Friends Activity</h2>
+            </li>
+            <li>
+              <span><i class="fa-regular fa-circle-user"></i></span>
+              <h2>Account</h2>
+            </li>
+            <li>
+              <span><i class="fa-solid fa-gear"></i></span>
+              <h2>Settings</h2>
+            </li>
+          </ul>
+          <!-- logout btn -->
+          <div class="logout-btn">
+            <span><i class="fa-solid fa-power-off"></i></span>
+            <h2>Log out</h2>
+          </div>
+        </div>
+      </nav>
+
+      <!-- nav ends here -->
+
+
+      
+      <!-- main -->
+      <main>
+        <div class="main-top-controller">
+          <ul>
+            <li class="main-topbar-search">
+              <span><i class="fa-solid fa-magnifying-glass"></i></span>
+              <input
+                type="text"
+                name="search"
+                id="search"
+                placeholder="search"
+              />
+            </li>
+            <li class="menu-btn" onclick="showMenu()">
+              <span><i class="fa-solid fa-bars"></i></span>
+            </li>
+          </ul>
+        </div>
+
+        <div class="main-topbar">
+          <ul>
+            <li>
+              <a href="#">Discover</a>
+            </li>
+            <li>
+              <a href="#">Trending</a>
+            </li>
+            <li><a href="#">Latest</a></li>
+            <li><a href="#">Popular</a></li>
+
+            <script>
+              function showMenu() {
+                document.querySelector("nav").classList.toggle("active");
+              }
+            </script>
+          </ul>
+        </div>
+        <!-- main topbar ends here -->
+
+        <div class="main-popular-artist">
+          <!-- artist header -->
+
+          <!-- main item heading -->
+          <div class="main-popular-item-heading">
+            <h3>Popular Artist</h3>
+            <p>
+              <a href="#"
+                >View all <span><i class="fa-solid fa-chevron-right"></i></span
+              ></a>
+            </p>
+          </div>
+          <!-- main item heading ends -->
+
+          <div class="main-popular-artist-cards">
+            <!-- artist card here -->
+            <div class="main-popular-artist-card">
+              <span><img src="https://placehold.co/60x60" alt="" /></span>
+              <p>KK</p>
+            </div>
+            <!-- artist card here -->
+            <div class="main-popular-artist-card">
+              <span><img src="https://placehold.co/60x60" alt="" /></span>
+              <p>KK</p>
+            </div>
+            <!-- artist card here -->
+            <div class="main-popular-artist-card">
+              <span><img src="https://placehold.co/60x60" alt="" /></span>
+              <p>KK</p>
+            </div>
+            <!-- artist card here -->
+            <div class="main-popular-artist-card">
+              <span><img src="https://placehold.co/60x60" alt="" /></span>
+              <p>KK</p>
+            </div>
+            <!-- artist card here -->
+            <div class="main-popular-artist-card">
+              <span><img src="https://placehold.co/60x60" alt="" /></span>
+              <p>KK</p>
+            </div>
+          </div>
+        </div>
+        <!-- main popular artist ends here -->
+
+        <!-- trendy songs -->
+        <div class="trendy-song">
+          <!-- main item heading -->
+          <div class="main-popular-item-heading">
+            <h3>Trendy songs</h3>
+            <p>
+              <a href="#"
+                >View all <span><i class="fa-solid fa-chevron-right"></i></span
+              ></a>
+            </p>
+          </div>
+          <!-- main item heading ends -->
+
+          <div class="trendy-song-cards">
+            <!-- trendy song card -->
+            <div class="trendy-song-card">
+              <span>
+                <img src="https://placehold.co/180x200" alt="" />
+              </span>
+              <div class="trendy-song-card-title">
+                <p>saffarana di anta</p>
+                <span><i class="fa-regular fa-heart"></i></span>
+              </div>
+              <div class="trendy-song-card-playlist">
+                <span><a href="#">Playlist</a></span>
+              </div>
+            </div>
+            <!-- trendy song card -->
+            <div class="trendy-song-card">
+              <span>
+                <img src="https://placehold.co/180x200" alt="" />
+              </span>
+              <div class="trendy-song-card-title">
+                <p>saffarana di anta</p>
+                <span><i class="fa-regular fa-heart"></i></span>
+              </div>
+              <div class="trendy-song-card-playlist">
+                <span><a href="#">Playlist</a></span>
+              </div>
+            </div>
+            <!-- trendy song card -->
+            <div class="trendy-song-card">
+              <span>
+                <img src="https://placehold.co/180x200" alt="" />
+              </span>
+              <div class="trendy-song-card-title">
+                <p>saffarana di anta</p>
+                <span><i class="fa-regular fa-heart"></i></span>
+              </div>
+              <div class="trendy-song-card-playlist">
+                <span><a href="#">Playlist</a></span>
+              </div>
+            </div>
+          </div>
+          <!-- trendy song ends here -->
+
+          <!-- recently played song here -->
+          <div class="recently-played-song">
+            <!-- main item heading -->
+            <div class="main-popular-item-heading">
+              <h3>Recently played</h3>
+              <p>
+                <a href="#"
+                  >View all
+                  <span><i class="fa-solid fa-chevron-right"></i></span
+                ></a>
+              </p>
+            </div>
+            <!-- main item heading ends -->
+
+            <div class="recently-played-row">
+              <div class="recently-played-title">
+                <span><img src="https://placehold.co/170x170" alt="" /></span>
+              </div>
+              <div class="recently-played-cards">
+                <!-- recently played card -->
+                <div class="recently-played-card">
+                  <div>
+                    <span
+                      ><img src="https://placehold.co/100x100" alt=""
+                    /></span>
+                  </div>
+                  <div class="recently-played-card-desc">
+                    <h3>music title</h3>
+                    <p>music artist</p>
+                  </div>
+                  <div>
+                    <span>
+                      <img src="/images/wave.png" alt="music" />
+                    </span>
+                  </div>
+                  <div class="recently-played-card-btn">
+                    <span><i class="fa-solid fa-play"></i></span>
+                  </div>
+                </div>
+
+                <!-- recently played card -->
+                <div class="recently-played-card">
+                  <div>
+                    <span
+                      ><img src="https://placehold.co/100x100" alt=""
+                    /></span>
+                  </div>
+                  <div class="recently-played-card-desc">
+                    <h3>music title</h3>
+                    <p>music artist</p>
+                  </div>
+                  <div>
+                    <span>
+                      <img src="/images/wave.png" alt="music" />
+                    </span>
+                  </div>
+                  <div class="recently-played-card-btn">
+                    <span><i class="fa-solid fa-play"></i></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!--  -->
+        </div>
+      </main>
+      <!-- main ends here -->
+
+      <!-- sidebar -->
+      <aside>
+        <div class="friend-zone-topbar">
+          <div>
+            <h3>Friends Activity</h3>
+            <p>150 friends</p>
+          </div>
+          <div>
+            <span><i class="fa-solid fa-user-group"></i></span>
+          </div>
+        </div>
+        <br />
+        <p class="friend-text-title">
+          see what songs your freinds and <br />
+          followers are listening to.
+        </p>
+        <br />
+
+        <!-- freind circle card -->
+        <section class="friend-circle">
+          <!-- card starts here -->
+          <div class="friend-circle-card">
+            <div class="card-title">
+              <span>
+                <img src="https://placehold.co/50x50" alt="" />
+              </span>
+              <div>
+                <h3>Music title here</h3>
+                <p>music details here</p>
+              </div>
+            </div>
+
+            <div>
+              <span class="card-icon"><i class="fa-solid fa-music"></i></span>
+            </div>
+          </div>
+
+          <!-- card starts here -->
+          <div class="friend-circle-card">
+            <div class="card-title">
+              <span>
+                <img src="https://placehold.co/50x50" alt="" />
+              </span>
+              <div>
+                <h3>Music title here</h3>
+                <p>music details here</p>
+              </div>
+            </div>
+
+            <div>
+              <span class="card-icon"><i class="fa-solid fa-music"></i></span>
+            </div>
+          </div>
+          <!-- card starts here -->
+          <div class="friend-circle-card">
+            <div class="card-title">
+              <span>
+                <img src="https://placehold.co/50x50" alt="" />
+              </span>
+              <div>
+                <h3>Music title here</h3>
+                <p>music details here</p>
+              </div>
+            </div>
+
+            <div>
+              <span class="card-icon"><i class="fa-solid fa-music"></i></span>
+            </div>
+          </div>
+
+          <!-- card ends here -->
+          <div class="friend-circle-more">
+            <p><a href="#">see more..</a></p>
+          </div>
+        </section>
+        <!-- friend circle card ends here -->
+
+        <!-- sidebar player starts here -->
+        <section class="side-player">
+          <div class="side-player-title">
+            <span> </span>
+          </div>
+          <div class="side-player-duration">
+            <span>
+              <input
+                type="range"
+                value="50"
+                name="duration-slider"
+                id="duration-slider"
+              />
+            </span>
+            <div class="duration-time">
+              <span>2:30</span>
+              <span>4:40</span>
+            </div>
+          </div>
+          <div class="side-player-controller">
+            <div>
+              <span><i class="fa-solid fa-shuffle"></i></span>
+            </div>
+            <div>
+              <span class="side-player-prev-btn"
+                ><i class="fa-solid fa-backward-step"></i
+              ></span>
+            </div>
+            <div>
+              <span class="side-player-play-btn"
+                ><i class="fa-solid fa-play"></i
+              ></span>
+            </div>
+            <div>
+              <span class="side-player-next-btn"
+                ><i class="fa-solid fa-forward-step"></i
+              ></span>
+            </div>
+            <div>
+              <span><i class="fa-solid fa-repeat"></i></span>
+            </div>
+          </div>
+        </section>
+        <!-- sidebar player ends here -->
+      </aside>
+
+      <!-- sidebar ends here -->
+    </section>
+
+    <!-- container ends here -->
+  </body>
+</html>
